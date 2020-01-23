@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var sorting = require('postcss-sorting');
-var stylefmt = require('gulp-stylefmt');
 var prettier = require('gulp-prettier');
 
 gulp.task('css', function () {
