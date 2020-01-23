@@ -1,0 +1,5 @@
+node_modules/
+dest/style.scss
+.vscode-test
+logs
+*.log
