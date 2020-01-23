@@ -1,0 +1,94 @@
+.module-expandable-subscribe-form {
+    padding: 45px 0;
+    &__text {
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 768px) {
+            flex-flow: row wrap;
+        }
+        h2,
+        h3,
+        h4,
+        p,
+        span
+        a {
+            display: inline-block;
+            margin: 0px;
+            @media (min-width: 768px) {
+                + * {
+                    margin-left: 45px;
+                }
+            }
+            @media (max-width: 768px) {
+                width: 100%;
+                text-align: center;
+                + * {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    a.btn:after {
+        content:"\e259";
+        display: inline-block;
+        margin-left: 5px;
+        font-family: "Glyphicons Halflings";
+        transform-origin: center 9px;
+        transition: transform 150ms ease;
+    }
+    a.btn[aria-expanded="true"]:after {
+        transform: rotateZ(180deg);
+    }
+}
+// CTA Email Alerts Form
+.cta-form {
+    background-color:$color-accent-primary;
+    padding:60px 0;
+    .dropup .caret {
+        border-bottom-color: #fff;
+    }
+    &__text {
+        margin-bottom: 25px;
+    }        
+    form.dark .bootstrap-select.btn-group {
+        &:not(.dropup) .caret {
+            border-top-color: #fff;
+        }
+        &.dropup .caret {
+            border-bottom-color: #fff;
+        }
+        &:not(.dropup):hover .caret {
+            border-top-color: $color-accent-primary;
+        }
+        &.dropup:hover .caret {
+            border-bottom-color: $color-accent-primary;
+        }
+    }
+    form > .row + .row {
+        margin-top: 20px;
+    }    
+    .spr_ir_submit {
+        margin-top: 30px;    
+    }
+    .btn.main-select {
+        padding-top: 14px;
+    }
+    .bootstrap-select.btn-group .dropdown-menu li a {
+        color: $color-link;
+        &:hover {
+            color: $color-link-hover;
+        }
+    }
+    .bootstrap-select>.btn:before {
+        background: #fff;
+    }
+    @media (max-width: 768px) {
+        .row + .row {
+            margin-top: 0;
+        }
+        &__form-row {
+            margin-top: 25px;
+        }
+    }
+}
