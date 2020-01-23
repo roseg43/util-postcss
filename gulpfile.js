@@ -3,6 +3,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var sorting = require('postcss-sorting');
 var stylefmt = require('gulp-stylefmt');
+var prettier = require('gulp-prettier');
 
 gulp.task('css', function () {
     var processors = [
@@ -170,6 +171,9 @@ gulp.task('css', function () {
     ];
     return gulp.src('./src/*.scss')
         .pipe(postcss(processors, {syntax: require('postcss-scss')}))
-        .pipe(stylefmt())
+        .pipe(prettier({
+            tabWidth: 4,
+            useTabs: true
+        }))
         .pipe(gulp.dest('./dest'));
 });
