@@ -3,10 +3,10 @@ A dead-simple utility to apply postcss and stylefmt linting to SCSS files.
 
 # What does this do?
 This repository contains a custom gulp task that autoprefixes, sorts, and lints SCSS files using the following plugins:
-* gulp-postcss
-* autoprefixer
-* postcss-sorting
-* gulp-stylefmt
+- gulp-postcss
+- autoprefixer
+- postcss-sorting
+- gulp-stylefmt
 
 # Requirements
 npm v6.13.6+
