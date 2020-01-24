@@ -8,7 +8,7 @@ This repository contains a custom gulp task that autoprefixes, sorts, and lints 
 - gulp-postcss
 - autoprefixer
 - postcss-sorting
-- gulp-stylefmt
+- gulp-prettier
 
 # Requirements
 - npm v6.13.6+
