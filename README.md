@@ -11,9 +11,9 @@ This repository contains a custom gulp task that autoprefixes, sorts, and lints 
 - gulp-stylefmt
 
 # Requirements
-npm v6.13.6+
-gulp-cli v2.2.0+
-gulp v4.0.2+
+- npm v6.13.6+
+- gulp-cli v2.2.0+
+- gulp v4.0.2+
 
 See [this guide](https://gulpjs.com/docs/en/getting-started/quick-start) for getting started with Gulp, including setup.
 
