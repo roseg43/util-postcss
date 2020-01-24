@@ -1,5 +1,5 @@
 # util-postcss
-A dead-simple utility to apply postcss and stylefmt linting to SCSS files.
+A dead-simple utility to apply postcss and Prettier linting to SCSS files.
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
