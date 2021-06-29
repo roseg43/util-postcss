@@ -39,6 +39,7 @@ gulp.task('css', function () {
                 }
             ],
             "properties-order": [
+                "content",
                 "order",
                 "z-index",
                 "position",
@@ -46,7 +47,6 @@ gulp.task('css', function () {
                 "bottom",
                 "left",
                 "right",
-                "content",
                 "display",
                 "visibility",
                 "backface-visibility",
