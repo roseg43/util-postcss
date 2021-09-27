@@ -11,16 +11,9 @@ gulp.task('css', function () {
             "order": [
                 "custom-properties",
                 "dollar-variables",
-                {
-                  "type" : "at-rule",
-                  "name" : "include",
-                },
-                {
-                  "type"     : "at-rule",
-                  "name"     : "include",
-                  "hasBlock" : true
-                },
                 "declarations",
+                "rules",
+                "at-rules",
                 {
                   "type"     : "rule",
                   "selector" : /^&/
@@ -32,6 +25,15 @@ gulp.task('css', function () {
                 {
                   "type"     : "rule",
                   "selector" : /^&:   : \w+$/
+                },
+                {
+                  "type" : "at-rule",
+                  "name" : "include",
+                },
+                {
+                  "type"     : "at-rule",
+                  "name"     : "include",
+                  "hasBlock" : true
                 },
                 {
                   "type" : "at-rule",
