@@ -21,6 +21,8 @@ gulp.task('css', function () {
                   "hasBlock" : true
                 },
                 "declarations",
+                "rules",
+                "at-rules",
                 {
                   "type"     : "rule",
                   "selector" : /^&/
@@ -32,6 +34,10 @@ gulp.task('css', function () {
                 {
                   "type"     : "rule",
                   "selector" : /^&:   : \w+$/
+                },
+                {
+                  "type" : "at-rule",
+                  "name" : /^include media-breakpoint-\w+$/
                 },
                 {
                   "type" : "at-rule",
@@ -85,6 +91,10 @@ gulp.task('css', function () {
                 "border-bottom",
                 "border-left",
                 "border-radius",
+                "border-top-left-radius",
+                "border-top-right-radius",
+                "border-bottom-right-radius",
+                "border-bottom-left-radius",
                 "border-collapse",
                 "margin",
                 "margin-top",
