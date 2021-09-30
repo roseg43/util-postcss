@@ -11,6 +11,15 @@ gulp.task('css', function () {
             "order": [
                 "custom-properties",
                 "dollar-variables",
+                {
+                  "type" : "at-rule",
+                  "name" : "include",
+                },
+                {
+                  "type"     : "at-rule",
+                  "name"     : "include",
+                  "hasBlock" : true
+                },
                 "declarations",
                 "rules",
                 "at-rules",
@@ -28,12 +37,7 @@ gulp.task('css', function () {
                 },
                 {
                   "type" : "at-rule",
-                  "name" : "include",
-                },
-                {
-                  "type"     : "at-rule",
-                  "name"     : "include",
-                  "hasBlock" : true
+                  "name" : /^include media-breakpoint-\w+$/
                 },
                 {
                   "type" : "at-rule",
