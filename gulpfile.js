@@ -13,7 +13,7 @@ gulp.task('css', function () {
                 "dollar-variables",
                 {
                   "type" : "at-rule",
-                  "name" : "include",
+                  "name" : "include"
                 },
                 {
                   "type"     : "at-rule",
@@ -37,7 +37,7 @@ gulp.task('css', function () {
                 },
                 {
                   "type" : "at-rule",
-                  "name" : /^include media-breakpoint-\w+$/
+                  "name" : "\/^include media-breakpoint-\w+$/"
                 },
                 {
                   "type" : "at-rule",
