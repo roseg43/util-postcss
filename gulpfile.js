@@ -37,7 +37,8 @@ gulp.task('css', function () {
                 },
                 {
                   "type" : "at-rule",
-                  "name" : "\/^include media-breakpoint-\w+$/"
+                  "name" : "include",
+                  "parameter" : "media"
                 },
                 {
                   "type" : "at-rule",
